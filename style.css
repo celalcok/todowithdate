@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .task-app {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .task-app h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+  }
+
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  #taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  #addTaskBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  #addTaskBtn:hover {
+    background-color: #0056b3;
+  }
+
+  #taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #eaebeb;
+    color: rgb(119, 152, 119);
+  }
+
+  #taskList li .delete-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  #taskList li .delete-btn:hover {
+    transform: scale(1.2);
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: #999999;
+  }
+  .day-selector {
+    margin-bottom: 20px;
+  }
+  #dateSelect {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+  }
+
+  .calendar {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .days-row,
+  .dates-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+
+  .day-name {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .date-cell {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .date-cell:hover {
+    background: #d0e6ff;
+  }
+
+  .empty {
+    background: transparent;
+    cursor: default;
+  }
+
+  .selected {
+    background: #007bff;
+    color: white;
+  }
+
+  .has-tasks {
+    color: red;
+    font-weight: bold;
+  }
+
+
+  .calendar-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.month-btn {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 5px 10px;
+font-size: 18px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.month-btn:hover {
+background-color: #0056b3;
+}
